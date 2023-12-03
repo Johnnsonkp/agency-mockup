@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+body{
+  margin: 0px;
+  font-family: 'poppins';
+}
+.heroContainer{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://assets.codepen.io/6060109/agency-hero-image.png);
+  background-size: cover;
+  background-position: center center;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.heroContainer .navSection{
+  position: absolute;
+  top: 25px; 
+}
+.heroContainer .navSection ul{
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+.heroContainer .navSection ul li{
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.heroContainer .centered-cta h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+
+.servicesSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  height: 100%;
+  margin-bottom: 50px;
+  padding: 50px 50px;
+}
+
+.servicesSection h1{
+  font-size: 50px;
+  text-align: center;
+  color: #133588;
+}
+
+.servicesSection .cardContainer{
+  width: 78%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.servicesSection .cardContainer .singleCard{
+  flex: 0.3;
+  cursor: pointer;
+}
+.servicesSection .cardContainer .singleCard img{
+  width: 100%;
+}
+.servicesSection .cardContainer .singleCard p{
+  font-size: 1.1rem;
+  color: #806c6c;
+  margin-top: 2px;
+}
+
+
+
+.footer-section {
+  height: 350px;
+  background: #133588;
+  padding: 40px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentContainer{
+  width: 100%;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-section h1 {
+  color: white;
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+.footer-section form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+input[type="text"] {
+  width: 80%;
+}
+input[type="submit"] {
+  color: #806c6c;
+  border-radius: 0;
+  border: none;
+  padding: 10px 15px;
+}
+input[type="text"] {
+  border: none;
+  background: none;
+  border-bottom: 1px solid white;
+  width: 40%;
+  padding: 5px 0;
+  margin: 20px auto;
+  display: block;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  
+}
+
+
+
+@media only screen and (max-width: 425px){
+  .heroContainer{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(https://assets.codepen.io/6060109/agency-hero-image.png);
+    background-size: cover;
+    background-position: 45% center;
+  }
+  .heroContainer .navSection ul li{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .heroContainer .centered-cta h1{
+    font-size: 2rem;
+  }
+  
+}
+@media only screen and (max-width: 500px){
+  .servicesSection .cardContainer{
+    flex-direction: column;
+  }
+  .servicesSection .cardContainer .singleCard{
+    margin: 20px 0px;
+  }
+  .footer-section h1 {
+    width: 80% !important;
+    margin-bottom: 10px;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  .footer-section form{
+    width: 80%;
+  }
+  .footer-section {
+    padding: 0px 0;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .servicesSection{
+    margin-bottom: 50px;
+    padding: 20px 5px;
+  }
+  .servicesSection .cardContainer{
+    width: 90%;
+  }
+  .servicesSection .cardContainer .singleCard p{
+    font-size: 1.3rem;
+    margin-top: 8px;
+    text-align: center;
+  }
+  input[type="text"] {
+    width: 80%;
+  }
+  .footer-section h1 {
+    width: 50%;
+  }
+}
